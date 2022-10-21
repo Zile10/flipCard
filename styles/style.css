@@ -16,12 +16,28 @@
   top: 0;
   left: 0;
   z-index: 0;
+
+  transform: rotateY(-90deg);
+  transition: 2s;
+  transform-style: preserve-3d;
 }
 .back {
-  scale: 0.254;
-  transform: translate(-146%, -147%);
+  top: 0;
+  left: 0;
+  /* z-index: 1; */
 }
 
 .container:hover .front {
   z-index: 3;
+  
+  transform: rotateY(0deg);
+  transition: 3s;
+  transform-style: preserve-3d;
+}
+
+.container:hover .back {
+  transform: rotateY(180deg);
+  transition: 2s;
+  transform-style: preserve-3d;
+  transform: hi;
 }
